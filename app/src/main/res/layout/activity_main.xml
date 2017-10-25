@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zacscode.simplecalc.MainActivity">
+
+    <EditText
+        style="@style/EditTextTheme"
+        android:id="@+id/equationEditText"
+        android:hint="@string/prompt"
+        android:inputType="text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.29" />
+
+    <Button
+        style="@style/ButtonTheme"
+        android:id="@+id/calculateButton"
+        android:text="@string/calc"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/zButton" />
+
+    <TextView
+        style="@style/textViewTheme"
+        android:id="@+id/resultTextView"
+        android:text="@string/result"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/equationEditText"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.574" />
+
+    <Button
+        style = "@style/NumberButtonTheme"
+        android:id="@+id/exponentButton"
+        android:text="@string/exponent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/button9"
+        app:layout_constraintLeft_toRightOf="@+id/button0"
+        android:layout_marginStart="10dp" />
+
+    <!--1 -->
+    <Button
+        style = "@style/NumberButtonTheme"
+        android:id="@+id/button1"
+        android:text="@string/one"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/equationEditText" />
+
+    <!--2 -->
+    <Button
+        style = "@style/NumberButtonTheme"
+        android:id="@+id/button2"
+        android:text="@string/two"
+        app:layout_constraintRight_toLeftOf="@+id/button3"
+        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/button1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/equationEditText"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <!--3 -->
+    <Button
+        style = "@style/NumberButtonTheme"
+        android:id="@+id/button3"
+        android:text="@string/three"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/equationEditText"
+        app:layout_constraintRight_toLeftOf="@+id/devideButton"
+        android:layout_marginEnd="10dp" />
+
+    <!--4 -->
+    <Button
+        style="@style/NumberButtonTheme"
+        android:id="@+id/button4"
+        android:text="@string/four"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        android:layout_marginStart="52dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <!--5 -->
+    <Button
+        style="@style/NumberButtonTheme"
+        android:id="@+id/button5"
+        android:text="@string/five"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintRight_toLeftOf="@+id/button6"
+        android:layout_marginRight="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/button4"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <!--6 -->
+    <Button
+        style="@style/NumberButtonTheme"
+        android:id="@+id/button6"
+        android:text="@string/six"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintRight_toLeftOf="@+id/multiplyButton"
+        android:layout_marginEnd="10dp" />
+
+    <!--7 -->
+    <Button
+        style="@style/NumberButtonTheme"
+        android:id="@+id/button7"
+        android:text="@string/seven"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        android:layout_marginStart="52dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <!--8 -->
+    <Button
+        style="@style/NumberButtonTheme"
+        android:id="@+id/button8"
+        android:text="@string/eight"
+        app:layout_constraintLeft_toRightOf="@+id/button7"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintRight_toLeftOf="@+id/button9"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <!--9 -->
+    <Button
+        style="@style/NumberButtonTheme"
+        android:id="@+id/button9"
+        android:text="@string/nine"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:layout_constraintRight_toLeftOf="@+id/plusButton"
+        android:layout_marginEnd="10dp" />
+
+    <!--0 -->
+    <Button
+        style = "@style/NumberButtonTheme"
+        android:id="@+id/button0"
+        android:text="@string/zero"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:layout_constraintLeft_toRightOf="@+id/pointButton"
+        android:layout_marginStart="10dp" />
+
+    <Button
+        style = "@style/NumberButtonTheme"
+        android:id="@+id/pointButton"
+        android:text="@string/dot"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/button7"
+        android:layout_marginStart="52dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        style = "@style/NumberButtonTheme"
+        android:id="@+id/devideButton"
+        android:text="@string/devide"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/equationEditText"
+        app:layout_constraintRight_toLeftOf="@+id/secondButton"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        style = "@style/NumberButtonTheme"
+        android:id="@+id/multiplyButton"
+        android:text="@string/multiply"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/devideButton"
+        app:layout_constraintRight_toLeftOf="@+id/xButton"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        style = "@style/NumberButtonTheme"
+        android:id="@+id/plusButton"
+        android:text="@string/plus"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/multiplyButton"
+        app:layout_constraintRight_toLeftOf="@+id/yButton"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        style = "@style/NumberButtonTheme"
+        android:id="@+id/minusButton"
+        android:text="@string/minus"
+        app:layout_constraintLeft_toRightOf="@+id/exponentButton"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/plusButton"
+        app:layout_constraintRight_toLeftOf="@+id/zButton"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintHorizontal_bias="0.333" />
+
+    <Button
+        style="@style/NumberButtonTheme"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:id="@+id/secondButton"
+        android:text="@string/second"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/equationEditText"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        style="@style/NumberButtonTheme"
+        android:id="@+id/xButton"
+        android:text="@string/x"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/secondButton"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        style="@style/NumberButtonTheme"
+        android:id="@+id/yButton"
+        android:text="@string/y"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/xButton" />
+
+    <Button
+        style="@style/NumberButtonTheme"
+        android:id="@+id/zButton"
+        android:text="@string/z"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/yButton"
+        android:layout_marginEnd="52dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
